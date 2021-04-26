@@ -44,7 +44,7 @@ public class Gun : MonoBehaviour
         {
             Debug.Log(hitInfo.transform.name);
             Debug.Log(player.transform.forward);
-            Target target= hitInfo.transform.GetComponent<Target>();
+            Target target = GetComponent<Target>();
 
             targetpoint = hitInfo.point;
 

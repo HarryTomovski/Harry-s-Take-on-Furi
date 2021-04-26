@@ -1,5 +1,5 @@
-﻿
-using System;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Target : MonoBehaviour
@@ -10,7 +10,7 @@ public class Target : MonoBehaviour
     public void TakeDamage(float damageAmount)
     {
         health -= damageAmount;
-        if (health<=0)
+        if (health <= 0)
         {
             Die();
         }
